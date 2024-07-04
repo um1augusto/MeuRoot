@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags para codificação de caracteres e viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Exemplo AngularJS</title>
+</head>
+
+<body>
+    <!-- Título da seção -->
+    <h2>Exemplo de aplicação AngularJS com elementos HTML</h2>
+    
+    <!-- Div que inicia o aplicativo AngularJS -->
+    <div ng-app="" ng-init="cor='lightblue'">
+        
+        <!-- Entrada para definir a cor de fundo -->
+        <input style="background-color: {{cor}}" ng-model="cor">
+        
+        <!-- Exibição da cor digitada -->
+        <p>COR DIGITADA: {{cor}}</p>
+        
+        <!-- Div interna com inicializações e expressões -->
+        <span ng-init="quantidade=1; valor=5">
+            
+            <!-- Expressão numérica -->
+            <p>Expressão numérica: <span style="background-color: {{cor}}">{{ quantidade * valor }}</span></p>
+            
+            <!-- Div com inicialização de nome e sobrenome -->
+            <span ng-init="nome='Fulano'; sobrenome='De Tal'">
+                
+                <!-- Exibição do nome completo -->
+                <p>Nome completo: {{nome + " " + sobrenome}}</p>
+                
+            </span>
+        
+        </span>
+    
+    </div>
+    
+    <!-- Inclusão da biblioteca AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+
+</html>

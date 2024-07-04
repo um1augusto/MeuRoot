@@ -1,0 +1,42 @@
+.container {
+    width: 96%; /* Define a largura da classe .container como 96% */
+}
+
+header h1 {
+    text-align: center; /* Centraliza o texto dentro dos elementos <h1> dentro do cabeçalho */
+}
+
+header h1 img {
+    max-width: 50%; /* Define a largura máxima das imagens dentro de <h1> dentro do cabeçalho como 50% do contêiner pai */
+}
+
+.carrinho {
+    display: none; /* Esconde o elemento com a classe .carrinho */
+}
+
+.menu-conteudo {
+    position: static; /* Define a posição do elemento .menu-conteudo como estático */
+    text-align: center; /* Centraliza o texto dentro do elemento .menu-conteudo */
+}
+
+menu-opcoes ul li {
+    display: inline-block; /* Exibe os itens da lista de <ul> horizontalmente */
+    margin: 5px; /* Adiciona margem de 5px em todos os lados dos itens da lista */
+}
+
+.busca, .menu-departamentos, .destaque img {
+    margin-right: 0; /* Remove a margem direita dos elementos com as classes .busca, .menu-departamentos e .destaque img */
+    width: 100%; /* Define a largura desses elementos como 100% */
+}
+
+.painel {
+    width: auto; /* Define a largura do painel automaticamente, ajustando ao conteúdo interno */
+}
+
+.painel li {
+    width: 30%; /* Define a largura dos itens da lista dentro de .painel como 30% */
+}
+
+.painel img {
+    width: 100%; /* Define a largura das imagens dentro de .painel como 100% do contêiner pai */
+}

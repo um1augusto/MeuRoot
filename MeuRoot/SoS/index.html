@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Configura a viewport para garantir que o site seja exibido corretamente em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link para o arquivo de estilo CSS externo -->
+    <link rel="stylesheet" href="./css/sos.css">
+    
+    <!-- Inclusão do arquivo JavaScript personalizado com defer para garantir que seja carregado após o HTML -->
+    <script defer src="./js/sos.js"></script>
+
+    <!-- Título da página -->
+    <title>SOS RS</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>
+            Diagnosticos de <br> doenças
+        </h1>
+        <h2>Insira os sintomas:</h2>
+    </header>
+    
+    <!-- Conteúdo principal da página -->
+    <main>
+        <section>
+            <!-- Texto e botão de confirmação para o primeiro conjunto de sintomas -->
+            <div class="texto1">
+                <p>Febre alta, dor de cabeça, sangramentos, dor muscular, calafrios, olhos vermelhos e vômitos (Dor na panturrilha e lombar);</p>
+                <button onclick="confirmar1()">CONFIRMAR</button>
+            </div>
+
+            <!-- Texto e botão de confirmação para o segundo conjunto de sintomas -->
+            <div class="texto2">
+                <p>Contrações musculares dolorosas, especialmente na mandíbula e no pescoço, pode ter dificuldade para respirar, febre, Pressão alta e sudorese;</p>
+                <button onclick="confirmar2()">CONFIRMAR</button>
+            </div>
+
+            <!-- Texto e botão de confirmação para o terceiro conjunto de sintomas -->
+            <div class="text3">
+                <p>Sangramentos nas fezes, dores abdominais; em alguns casos pode haver muco;</p>
+                <button onclick="confirmar3()">CONFIRMAR</button>
+            </div>
+
+            <!-- Texto e botão de confirmação para o quarto conjunto de sintomas -->
+            <div class="text4">
+                <p>fadiga, icterícia (amarelão pelo corpo), urina escura, fezes claras e perda de apetite;</p>
+                <button onclick="confirmar4()">CONFIRMAR</button>
+            </div>
+
+            <!-- Texto e botão de confirmação para o quinto conjunto de sintomas -->
+            <div class="text5">
+                <p>Febre alta, dores musculares, erupções cutâneas, dores nas articulações, em casos graves, hemorragia intensa, dificuldade para respirar (casos graves) edema (inchaço), rubor (vermelhidão), febre, dor de cabeça;</p>
+                <button onclick="confirmar5()">CONFIRMAR</button>
+            </div>
+
+            <!-- Texto e botão de confirmação para o sexto conjunto de sintomas -->
+            <div class="text6">
+                <p>Lugares úmidos, escuros, com entulhos ou destroços;</p>
+                <button onclick="confirmar6()">CONFIRMAR</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

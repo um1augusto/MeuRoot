@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário com jQuery</title>
+    <link rel="stylesheet" href="queryFormulario.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h2>Formulário de Contato</h2>
+    <form id="contactForm">
+        <!-- Campo Nome -->
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+        </div>
+
+        <!-- Campo Email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <!-- Campo Mensagem -->
+        <div>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <span class="error" id="messageError"></span>
+        </div>
+
+        <!-- Botão Enviar -->
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+
+        <!-- Mensagem de Confirmação -->
+        <div id="confirmationMessage" style="display: none;">
+            <h3>Dados Enviados:</h3>
+            <div id="confirmationText"></div>
+        </div>
+    </form>
+
+    <!-- Script JavaScript -->
+    <script src="queryFormulario.js"></script>
+</body>
+
+</html>

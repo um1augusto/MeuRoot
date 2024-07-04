@@ -1,0 +1,35 @@
+{
+    "pessoas" : [
+        {
+        "nome":"Augusto",
+        "idade": 30,
+        "cpf":"000.000.000-00",
+        "telefone":"51999189738"
+        }, 
+        {
+        "nome":"Aline",
+        "idade": 26,
+        "cpf":"000.000.000-01",
+        "telefone":"51999189737"
+        },
+        {
+        "nome":"Rodolfo",
+        "idade": 24,
+        "cpf":"000.000.000-02",
+        "telefone":"51999189736"
+        },
+        {
+        "nome":"Apenas",
+        "idade": 10,
+        "cpf":"000.000.000-03",
+        "telefone":"51999189736"
+        },
+        {
+        "nome":"Meu",
+        "idade": 110,
+        "cpf":"000.000.000-04",
+        "telefone":"51999189735"
+        }
+    ]
+}
+    

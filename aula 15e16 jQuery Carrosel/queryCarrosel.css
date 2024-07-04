@@ -1,0 +1,38 @@
+/* queryCarrosel.css */
+.container-carrosel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagem-carrosel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.imagem {
+    width: 100%; /* Cada imagem ocupa 100% da largura do contêiner */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    flex-shrink: 0;
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    color: black;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1; /* Ajusta o z-index para garantir que os botões fiquem na frente das imagens */
+}
+
+.next {
+    right: 10px; /* Posição do botão "Avançar" ajustada */
+}
+
+.prev {
+    left: 10px; /* Posição do botão "Anterior" ajustada */
+}

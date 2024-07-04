@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive; /* Define a fonte para todo o documento */
+}
+
+/* Estilos da Pokédex */
+.pokedex {
+  width: 100%; /* Largura total */
+  max-width: 425px; /* Largura máxima */
+}
+
+/* Estilos do corpo da página */
+body {
+  text-align: center; /* Centraliza o texto */
+  background: linear-gradient(to bottom, #6ab7f5, #fff); /* Fundo gradiente */
+  min-height: 100vh; /* Altura mínima igual à altura da janela */
+}
+
+/* Estilos do contêiner principal */
+main {
+  display: inline-block; /* Exibe como bloco em linha */
+  margin-top: 2%; /* Margem superior */
+  padding: 15px; /* Preenchimento interno */
+  position: relative; /* Posição relativa para posicionamento absoluto interno */
+}
+
+/* Estilos da imagem do Pokémon */
+.pokemon_image {
+  position: absolute; /* Posição absoluta */
+  bottom: 55%; /* Distância do fundo */
+  left: 50%; /* Distância da esquerda */
+  transform: translate(-63%, 20%); /* Translação para ajuste de posição */
+  height: 18%; /* Altura da imagem */
+}
+
+/* Estilos dos dados do Pokémon */
+.pokemon_data {
+  position: absolute; /* Posição absoluta */
+  font-weight: 600; /* Peso da fonte */
+  color: #aaa; /* Cor do texto */
+  top: 54.5%; /* Distância do topo */
+  right: 27%; /* Distância da direita */
+  font-size: clamp(8px, 5vw, 25px); /* Tamanho da fonte responsivo */
+}
+
+.pokemon__data {
+  position: absolute; /* Posição absoluta */
+  font-weight: 600; /* Peso da fonte */
+  color: #aaa; /* Cor do texto */
+  top: 63.5%; /* Distância do topo */
+  right: 27%; /* Distância da direita */
+  font-size: clamp(8px, 5vw, 25px); /* Tamanho da fonte responsivo */
+}
+
+/* Estilos do nome do Pokémon */
+.pokemon_name {
+  color: #3a444d; /* Cor do texto */
+  text-transform: capitalize; /* Capitaliza o texto */
+}
+
+/* Estilos do formulário de pesquisa */
+.form {
+  position: absolute; /* Posição absoluta */
+  width: 65%; /* Largura do formulário */
+  top: 73%; /* Distância do topo */
+  left: 13.5%; /* Distância da esquerda */
+}
+
+/* Estilos do campo de entrada de pesquisa */
+.input_search {
+  width: 100%; /* Largura total */
+  padding: 5%; /* Preenchimento interno */
+  font-weight: 600; /* Peso da fonte */
+  font-size: clamp(8px, 5vw, 1rem); /* Tamanho da fonte responsivo */
+  border: 2px solid #333; /* Borda sólida */
+  border-radius: 5px; /* Raio da borda */
+  color: #3a444d; /* Cor do texto */
+  box-shadow: -3px 4px 0 #817f7f, -5px 7px 0 #333; /* Sombra */
+}
+
+/* Estilos dos botões de navegação */
+.buttons {
+  position: absolute; /* Posição absoluta */
+  bottom: 10%; /* Distância do fundo */
+  left: 50%; /* Distância da esquerda */
+  width: 65%; /* Largura */
+  transform: translate(-57%, 0); /* Translação para ajuste de posição */
+  display: flex; /* Exibe como flexível */
+  gap: 20px; /* Espaço entre os itens */
+}
+
+/* Estilos dos botões */
+.button {
+  width: 50%; /* Largura */
+  padding: 4%; /* Preenchimento interno */
+  border: 2px solid #000; /* Borda sólida */
+  border-radius: 5px; /* Raio da borda */
+  font-size: clamp(8px, 5vw, 1rem); /* Tamanho da fonte responsivo */
+  font-weight: 600; /* Peso da fonte */
+  color: white; /* Cor do texto */
+  background-color: #817f7f; /* Cor de fundo */
+  box-shadow: -2px 3px 0 #817f7f, -4px 6px 0 #333; /* Sombra */
+}
+
+/* Estilos do estado ativo do botão */
+.button:active {
+  box-shadow: inset -4px 4px 0 #222; /* Sombra interna ao clicar */
+  font-size: 0.9rem; /* Tamanho da fonte ao clicar */
+}
+
+/* Estilos das informações adicionais */
+.infoAdicionais {
+  position: absolute; /* Posição absoluta */
+  bottom: 18%; /* Distância do fundo */
+  padding: 2%; /* Preenchimento interno */
+  left: 50%; /* Distância da esquerda */
+  width: 65%; /* Largura */
+  transform: translate(-57%, 0); /* Translação para ajuste de posição */
+  display: flex; /* Exibe como flexível */
+  gap: 25%; /* Espaço entre os itens */
+  background-color: aqua; /* Cor de fundo */
+}
+
+.pokemon_peso {
+  color: #ffffff; /* Cor do texto */
+}
+
+.pokemon_tipo {
+  color: #ffffff; /* Cor do texto */
+  text-transform: capitalize; /* Capitaliza o texto */
+}

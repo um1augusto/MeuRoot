@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags para codificação de caracteres e viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Atividade 1</title>
+</head>
+<body>
+    <!-- Título da atividade -->
+    <h2>Atividade 1 Angular (Expressão matemática)</h2>
+    
+    <!-- Div que inicia o aplicativo AngularJS -->
+    <div ng-app="" ng-init="cor='pink'">
+        <!-- Entrada para o primeiro valor -->
+        <p>Digite o primeiro valor: <input type="number" ng-model="valor1"></p>
+        
+        <!-- Entrada para o segundo valor -->
+        <p>Digite o segundo valor: <input type="number" ng-model="valor2"></p>
+        
+        <!-- Exibição da expressão numérica com cor de fundo dinâmica -->
+        <p>Expressão numérica: <span style="background-color: {{cor}};">{{valor1 + valor2}}</span></p>
+    </div>
+    
+    <!-- Inclusão da biblioteca AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>

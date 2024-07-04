@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags para codificação de caracteres e viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Atividade 2</title>
+</head>
+<body>
+    <!-- Título da atividade -->
+    <h2>Atividade 2 Angular (Nome da pessoa)</h2>
+    
+    <!-- Div que inicia o aplicativo AngularJS -->
+    <div ng-app="" ng-init="name='pink'">
+        <!-- Entrada para o nome da pessoa -->
+        <p>Digite o nome: <input type="text" ng-model="name"></p>
+        
+        <!-- Exibição da saudação usando o nome digitado -->
+        <h1>Olá {{name}}</h1>
+    </div>
+    
+    <!-- Inclusão da biblioteca AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* centralizando todo o conteúdo na página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* aqui vou estilizar o header para centralizar títulos com fundo colorido */
+header {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* removendo margens padrão dos títulos no header */
+header h1, header h2 {
+    margin: 0;
+}
+
+/* adicionando espaço entre h1 e h2 */
+header h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* adicionando um pseudo-elemento oval ao header para o fundo */
+header::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 120%; 
+    background-color: #E69597;
+    border-radius: 50%; 
+    z-index: -1;
+}
+
+/* centralizando o conteúdo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+}
+
+/* aqui vou estilizar as divs de texto */
+.texto1, .texto2, .text3, .text4, .text5, .text6 {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #E69597;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* aqui vou estilizar e centraliza os botões */
+.texto1 button, .texto2 button, .text3 button, .text4 button, .text5 button, .text6 button {
+    background-color: #E69597;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    font-size: 80%;
+    font-weight: bold;
+    padding: 3px 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 10px auto 0 auto;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 150px;
+}
+
+/* aqui muda a cor de fundo dos botões ao passar o mouse */
+.texto1 button:hover, .texto2 button:hover, .text3 button:hover, .text4 button:hover, .text5 button:hover, .text6 button:hover {
+    background-color: #d85a5c;
+}

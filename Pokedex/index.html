@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="icon" href="../img/favicon-16x16.png"> <!-- Ícone da página -->
+    <link rel="stylesheet" href="./css/pokedex.css"> <!-- Estilos CSS -->
+    <script defer src="./js/pokedex.js"></script> <!-- Script JavaScript -->
+
+    <title>Pokédex</title> <!-- Título da página -->
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="../audio/driftveil-city-pokémon-black-white-made-with-Voicemod.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <main>
+        <img src="#" alt="pokemon" class="pokemon_image"> <!-- Imagem do Pokémon exibido -->
+
+        <h1 class="pokemon_data">
+            <span class="pokemon_number"></span> - <!-- Número do Pokémon -->
+            <span class="pokemon_name"></span> <!-- Nome do Pokémon -->  
+        </h1>
+
+        <h1 class="pokemon__data">
+            <p>Peso: <span class="pokemon_peso"></span></p> <!-- Peso do Pokémon -->
+            <p>Tipo: <span class="pokemon_tipo"></span></p> <!-- Tipo do Pokémon -->
+        </h1>
+
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Nome ou Número" required /> <!-- Campo de pesquisa -->
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">&lt;Prev</button> <!-- Botão anterior -->
+            <button class="button btn-next">Next &gt;</button> <!-- Botão próximo -->
+        </div>
+
+        <img src="../img/pokedex.png" alt="pokedex" class="pokedex"> <!-- Imagem da Pokédex -->
+
+        <audio class="pokemon_sound" autoplay>
+            <source src="" type="audio/ogg">
+        </audio>
+    </main>
+</body>
+
+</html>

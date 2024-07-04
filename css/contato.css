@@ -1,0 +1,58 @@
+/* Estilos para todos os dispositivos */
+p {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    background-image: url("../img/fundoCinzaa.jpg");
+}
+
+h2 {
+    border-bottom: 7px solid #333333;
+}
+
+figure {
+    background-color: #f2eded;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+p:first-letter {
+    font-weight: bold;
+}
+
+h1 + p {
+    text-indent: 0;
+}
+
+p:first-line {
+    font-variant: small-caps;
+}
+
+:not(p) + p:first-line {
+    font-variant: small-caps;
+}
+
+.video_decolagem_foguete {
+    width: 40%;
+    height: 30%;
+}
+/* Media Query para tablet*/
+@media only screen and (min-width: 768px) {
+    /* Ajustes para tablets */
+    .video_decolagem_foguete {
+        width: 60%;
+        height: 40%;
+    }
+}
+
+/* Media Query para desktops*/
+@media only screen and (min-width: 1024px) {
+    /* Ajustes para desktops */
+    .video_decolagem_foguete {
+        width: 80%;
+        height: 50%;
+    }
+}

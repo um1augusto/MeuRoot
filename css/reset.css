@@ -1,0 +1,59 @@
+/* Reset CSS básico */
+
+/* Define o comportamento padrão para diversos elementos HTML */
+
+/* Define margem, preenchimento e borda como 0 para todos os elementos */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Corrige o display para elementos HTML5 em navegadores mais antigos */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Define o espaçamento padrão de linha para o corpo da página */
+body {
+    line-height: 1;
+}
+
+/* Remove estilos de lista de marcadores e listas numeradas */
+ol, ul {
+    list-style: none;
+}
+
+/* Remove aspas de citação de elementos blockquote e q */
+blockquote, q {
+    quotes: none;
+}
+
+/* Garante que blockquote e q não tenham conteúdo extra */
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Garante que tabelas tenham bordas e espaçamento de células zerados */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

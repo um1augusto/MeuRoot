@@ -1,0 +1,10 @@
+/* Estilos opcionais para a página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .cropme-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
